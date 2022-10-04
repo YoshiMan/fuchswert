@@ -1,0 +1,22 @@
+{
+  "name": "fuchswert",
+  "version": "0.0.1",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "migrate local": "truffle migrate --network development",
+    "migrate goerli": "truffle migrate --network goerli",
+    "networks": "truffle networks",
+    "test": "truffle test"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.16",
+    "dotenv": "^16.0.3"
+  }
+}
