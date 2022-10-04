@@ -1,0 +1,17 @@
+name: Build Vue
+on: [push]
+jobs:
+  build_vue:
+    runs-on: ubuntu-latest
+    name: Build Vue
+    steps:
+    - uses: actions/checkout@v3.0.2
+    - id: Build-Vue
+      working-directory: ./app
+      run: ls
+    - uses: YoshiMan/VuePagesAction@main
+      with:
+        username: 'YoshiMan'
+        reponame: 'fuchswert'
+        token: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
+        projectfolder: 'vapp'
