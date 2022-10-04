@@ -7,9 +7,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3.0.2
     - id: Build-Vue
-      working-directory: ./app
-      run: ls
-    - uses: YoshiMan/VuePagesAction@main
+      uses: YoshiMan/VuePagesAction@main
       with:
         username: 'YoshiMan'
         reponame: 'fuchswert'
